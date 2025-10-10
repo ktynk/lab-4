@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    char symbols[11];
+    int z, k;
+    k = 11;
+    printf("vvedite elementi 10 ");
+    for (z = 0;  z<k; z++)
+    {
+        scanf("%c", &symbols[z]);
+        //if(symbols=='Z') break;
+    }
+     for (z=0;z<k;z++)
+     {
+    printf("%c", symbols[z]);
+    /*  int n =10;
+  for(int i = 0; i < n; i++){
+      for(int a = 1+i: a<n; a++ ) {if
+      mass[i] != mass[a]*/
+  }
+    return 0;
+}
