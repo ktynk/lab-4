@@ -14,10 +14,10 @@ int main() {
      for (z=0;z<k;z++)
      {
     printf("%c", symbols[z]);
-    /*  int n =10;
+     int n =10;
   for(int i = 0; i < n; i++){
       for(int a = 1+i: a<n; a++ ) {if
-      mass[i] != mass[a]*/
+      mass[i] != mass[a]
   }
     return 0;
 }
