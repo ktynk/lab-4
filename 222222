@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+#include<conio.h>
+#include <corecrt_malloc.h>
+
+
+int main() {
+	int n;
+	
+	printf("vvedite kolvo elementiv: ");
+	scanf_s("%d", &n);
+	while (getchar() != '\n');
+
+	char* mass = (char*)malloc(10 * sizeof(char));
+	if (mass == 0) {
+		printf("oshibka\n");
+		return 1;
+	}
+	printf("vvedite elementi");
+	for (int i = 0; i < n; i++)
+	{
+		scanf_s("%c", &mass[i]);
+	}
+	return 0;
+}
