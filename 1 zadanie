@@ -1,30 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-
 int main()
 {
-    char symbols[11];
+    char symbols[10];
     int z;
-   
     printf("vvedite elementi 10 ");
     for (z = 0; z < 10; z++)
     {
-        scanf_s("%c", &symbols[z]);
-        //if(symbols=='Z') break;
+        scanf("%c", &symbols[z]);
+        getchar();
     }
-    printf("ne povtoraytsa: ");
-
     for (int i = 0; i < 10; i++) {
-        for (int a = 1 + i; a < 10; a++) {
-            if (symbols[i] == symbols[a]) {
-                printf("мусор");
-                return 1;
+        int flag = 1;
+        for (int a = 0; a < 10; a++) {
+            if (symbols[i] == symbols[a] && i!=a) {
+                flag = 0;
+                break;
             }
-            else if (symbols[i] != symbols[a])
-                printf("%c", symbols[i]);
+        } if (flag==1){
+         printf("ne povtoraytsa:%c\n",symbols[i]);
         }
-       
     }
     return 0;
 }
