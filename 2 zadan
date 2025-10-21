@@ -10,18 +10,23 @@ int main()
     for (z = 0; z <  h; z++)
     {
         scanf("%c", &symbols[z]);
-        getchar();}
-        for (int i=0;i<h;i++){
-    
-        for (int a = 0; a < h; a++) {
-            if (symbols[i] == symbols[a] && i!=a) {
-            for(int j=a+1;j<h;j++){
-                symbols[j-1]=symbols[j];
+        getchar();
+    }
+        
+    for (int i=0;i<h;i++) 
+        for (int a = 0; a < h; a++) 
+        
+            if (symbols[i] == symbols[a] && i!=a){ 
+                for(int j=a+1;j<h;j++) 
+                    symbols[j-1]=symbols[j];
+                
                 h--;
-                i--;
-                printf("%C",symbols[j]);
-        }
-        } 
-        }
-        }
-return 0;}     
+                a--;
+                    
+            }
+        
+    for (int I=0; I<h;I++)
+        printf("%c",symbols[I]);
+        
+    return 0;
+}     
