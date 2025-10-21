@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+int main()
+{ 
+    char symbols[10];
+    int z;
+    int h=10;
+    printf("vvedite elementi 10 ");
+    for (z = 0; z <  h; z++)
+    {
+        scanf("%c", &symbols[z]);
+        getchar();}
+        for (int i=0;i<h;i++){
+    
+        for (int a = 0; a < h; a++) {
+            if (symbols[i] == symbols[a] && i!=a) {
+            for(int j=a+1;j<h;j++){
+                symbols[j-1]=symbols[j];
+                h--;
+                i--;
+                printf("%C",symbols[j]);
+        }
+        } 
+        }
+        }
+return 0;}     
